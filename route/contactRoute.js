@@ -12,36 +12,34 @@ router.post("/contact", (req, res) => {
   }
 
   let smtpTransporter = nodemailer.createTransport({
-    service: "Gmail",
+    service: 'Gmail',
     port: 465,
     auth: {
-      user: "hkatyal345@gmail.com",
-      pass: "hkatyal5677",
-    },
-  });
+      user: 'hkatyal345@gmail.com',
+      pass: 'hkatyal5677',
+    }
+  })
+
   let mailOptions = {
     from: data.email,
-    to: "hkatyal345@gmail.com",
+    to: 'hkatyal345@gmail.com',
     subject: `message from ${data.name}`,
-    html: `
-
-            <h3>Informations<h3/>
+    html: `<h3>Information<h3/>
             <ul>
             <li>Name: ${data.name}<li/>
             <li>Email: ${data.email}<li/>
             </ul>
             <h3>Message</h3>
-            <p>${data.message}<p/>
-            `,
-  };
+            <p>${data.message}<p/>`
+  }
 
   smtpTransporter.sendMail(mailOptions, (error) => {
     try {
       if (error)
-        return res.status(400).json({ msg: "Please Fill All The Fields!" });
-      res.status(200).json({ msg: "Thank You For Contacting Harshit." });
+        return res.status(400).json({ msg: "Please Fill All The Fields!" })
+      res.status(200).json({ msg: "Thank You For Contacting Harshit." })
     } catch (error) {
-      if (error) return res.status(500).json({ msg: "There is server error" });
+      if (error) return res.status(500).json({ msg: "There is server error" })
     }
   });
 });
