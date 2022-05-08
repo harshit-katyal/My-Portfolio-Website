@@ -66,12 +66,6 @@ const Resume = (props) => {
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
-    },
-    {
       title: "Social media app using MERN stack",
       description:
         "A Social media with MERN- React, Nextjs, socket io for realTime chat & Notifications.",
@@ -79,18 +73,23 @@ const Resume = (props) => {
         "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
     },
     {
-      title: "Ecommerce Website",
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
-    },
-    {
       title: "A-blockchain-powered-cryptocurrency",
       description:
-        "A full-stack blockchain powered cryptocurrency. Backend with NodeJS, express API and full testing suite",
+        "A full-stack blockchain powered cryptocurrency.Backend with NodeJS, express API and full testing suite along with server to server capabilities",
       subHeading:
         "Technologies Used: React , Node Js and Express",
+    },
+    {
+      title: "Personal Portfolio Website",
+      description:
+        "A Personal Portfolio website to showcase all my details and projects at one place.",
+      subHeading: "Technologies Used: React JS, Bootsrap",
+    },
+    {
+      title: "Sorting Visualizer",
+      description:
+        "A Web Application built using React and is used to visualize classic sorting algorithms such as insertion sort, merge sort, quick sort, heap sort, etc.",
+      subHeading: "Technologies Used: React JS",
     }
 
   ];
@@ -118,8 +117,8 @@ const Resume = (props) => {
         <ResumeHeading
           heading={"High Radius"}
           subHeading={"Project Intern"}
-          fromDate={"2022"}
-          toDate={"Present"}
+          fromDate={"January 2022"}
+          toDate={"April 2022"}
         />
         <div className="experience-description">
           <span className="resume-description-text">

@@ -16,7 +16,7 @@ export default function Profile() {
               <a href="">
                 <i className="fa fa-instagram" />
               </a>
-              <a href="www.linkedin.com/in/harshit-katyal">
+              <a href="https://www.linkedin.com/in/harshit-katyal">
                 <i className="fa fa-linkedin-square" />
               </a>
               <a href="https://twitter.com/harshitkatyal12">
@@ -42,9 +42,7 @@ export default function Profile() {
                     "Full stack Developer 💻",
                     1000,
                     "Mern stack Dev 📱",
-                    1000,
-                    "React/React Native 🌐",
-                    1000,
+                    1000
                   ]}
                 />
               </h1>
@@ -58,7 +56,7 @@ export default function Profile() {
             <button className="btn primary-btn"
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             > Hire Me </button>
-            <a href="resume.pdf" download="resume.pdf">
+            <a href="https://drive.google.com/uc?export=download&id=1a-TLW3AAXgidnf8EhrCX2eGzjUM_9Ks8">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
