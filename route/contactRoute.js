@@ -12,11 +12,11 @@ router.post("/contact", (req, res) => {
   }
 
   let smtpTransporter = nodemailer.createTransport({
-    service: 'Gmail',
-    port: 465,
+    host: 'smtp-relay.sendinblue.com',
+    port: 587,
     auth: {
-      user: 'hkatyal345@gmail.com',
-      pass: 'hkatyal5677',
+      user: process.env.USER,
+      pass: process.env.PASS,
     }
   })
 
